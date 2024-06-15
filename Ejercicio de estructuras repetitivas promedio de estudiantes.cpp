@@ -5,6 +5,7 @@ using namespace std;
 
 int main()
 {
+	
 	string opciones;
 	int n, suma, cont, desaprobados, aprobados;
 	float promedio;	
@@ -12,6 +13,7 @@ int main()
 	cont=0;
 	desaprobados=0;
 	aprobados=0;
+	cout<<"BIENVENIDO AL REGISTRO DE NOTAS"<<endl;
 	
 	do
 	{
