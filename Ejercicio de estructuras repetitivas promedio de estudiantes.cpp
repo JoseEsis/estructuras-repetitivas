@@ -17,7 +17,7 @@ int main()
 	
 	do
 	{
-		cout<<"Registre las notas de los estudiantes(solo ingresar numeros): ";
+		cout<<"\nRegistre las notas de los estudiantes(solo ingresar numeros): ";
 		cin>>n;
 		suma+=n;		
 		cont++;
@@ -41,12 +41,18 @@ int main()
 		cout<<"El promedio de las notas es "<<promedio<<endl;
 		cout<<"aprobados: "<<aprobados<<endl;
 		cout<<"desaprobados: "<<desaprobados<<endl;
+		cout<<endl;
 	}
 	
 	else
 	{
 		cout<<"No se ingresaron notas"<<endl;
 	}
+	cout<<"Datos obtenidos"<<endl;
+	cout<<"\nCantidad de estudiantes registrados:"<<cont<<endl;
+	cout<<"Cantidad de estudiantes aprobados: "<<aprobados<<endl;
+	cout<<"Cantidad de estudiantes desaprobados: "<<desaprobados<<endl;
+	
 	
 	return 0;
 		
