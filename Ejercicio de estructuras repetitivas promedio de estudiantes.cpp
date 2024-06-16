@@ -17,7 +17,7 @@ int main()
 	
 	do
 	{
-		cout<<"Registre las notas de los estudiantes: ";
+		cout<<"Registre las notas de los estudiantes(solo ingresar numeros): ";
 		cin>>n;
 		suma+=n;		
 		cont++;
