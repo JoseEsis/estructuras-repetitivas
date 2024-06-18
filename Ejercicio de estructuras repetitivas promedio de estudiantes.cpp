@@ -4,21 +4,24 @@
 using namespace std; 
 
 int main()
-{
-	
+{	
 	string opciones;
 	int n, suma, cont, desaprobados, aprobados;
+	string nombre;
 	float promedio;	
 	suma=0;
 	cont=0;
 	desaprobados=0;
 	aprobados=0;
-	cout<<"BIENVENIDO AL REGISTRO DE NOTAS"<<endl;
+	cout<<"\nBIENVENIDO AL REGISTRO DE NOTAS"<<endl;
+	cout<<"\nRegistre su nombre: ";
+	cin>>nombre;
 	
 	do
 	{
 		cout<<"\nRegistre las notas de los estudiantes(solo ingresar numeros): ";
 		cin>>n;
+		
 		suma+=n;		
 		cont++;
 		if(n>10.5)
@@ -35,21 +38,11 @@ int main()
 	}
 	while(opciones=="si");
 
-	if(cont> 0)
-	{
-		promedio=suma/cont;
-		cout<<"El promedio de las notas es "<<promedio<<endl;
-		cout<<"aprobados: "<<aprobados<<endl;
-		cout<<"desaprobados: "<<desaprobados<<endl;
-		cout<<endl;
-	}
-	
-	else
-	{
-		cout<<"No se ingresaron notas"<<endl;
-	}
-	cout<<"Datos obtenidos"<<endl;
-	cout<<"\nCantidad de estudiantes registrados:"<<cont<<endl;
+	cout<<"\nDatos obtenidos"<<endl;
+	cout<<"\nNombre de la persona que esta registrando las notas: "<<nombre<<endl;
+	promedio=suma/cont;
+	cout<<"El promedio de las notas es: "<<promedio<<endl;
+	cout<<"Cantidad de estudiantes registrados:"<<cont<<endl;
 	cout<<"Cantidad de estudiantes aprobados: "<<aprobados<<endl;
 	cout<<"Cantidad de estudiantes desaprobados: "<<desaprobados<<endl;
 	
