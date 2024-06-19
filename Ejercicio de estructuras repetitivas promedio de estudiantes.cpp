@@ -7,7 +7,7 @@ int main()
 {	
 	string opciones;
 	int n, suma, cont, desaprobados, aprobados;
-	string nombre;
+	string nombre, nombreEstudiante;
 	float promedio;	
 	suma=0;
 	cont=0;
@@ -19,9 +19,10 @@ int main()
 	
 	do
 	{
-		cout<<"\nRegistre las notas de los estudiantes(solo ingresar numeros): ";
+		cout<<"\nRegistre nombre del estudiante: ";
+		cin>>nombreEstudiante;
+		cout<<"Registre la nota del estudiante (solo ingresar numeros): ";
 		cin>>n;
-		
 		suma+=n;		
 		cont++;
 		if(n>10.5)
