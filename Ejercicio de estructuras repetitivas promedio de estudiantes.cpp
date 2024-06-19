@@ -7,8 +7,9 @@ int main()
 {	
 	string opciones;
 	int n, suma, cont, desaprobados, aprobados;
-	string nombre, nombreEstudiante;
-	float promedio;	
+	string nombre, nombreEstudiante, RegistroNombre;
+	float promedio;
+	RegistroNombre= " ";
 	suma=0;
 	cont=0;
 	desaprobados=0;
@@ -21,6 +22,7 @@ int main()
 	{
 		cout<<"\nRegistre nombre del estudiante: ";
 		cin>>nombreEstudiante;
+		RegistroNombre+=nombreEstudiante+"\n";
 		cout<<"Registre la nota del estudiante (solo ingresar numeros): ";
 		cin>>n;
 		suma+=n;		
@@ -46,6 +48,7 @@ int main()
 	cout<<"Cantidad de estudiantes registrados:"<<cont<<endl;
 	cout<<"Cantidad de estudiantes aprobados: "<<aprobados<<endl;
 	cout<<"Cantidad de estudiantes desaprobados: "<<desaprobados<<endl;
+	cout<<"Lista de estudiantes que fueron registrados: "<<RegistroNombre<<endl;
 	
 	
 	return 0;
