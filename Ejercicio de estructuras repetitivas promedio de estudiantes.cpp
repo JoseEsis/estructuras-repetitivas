@@ -49,6 +49,7 @@ int main()
 	cout<<"Cantidad de estudiantes aprobados: "<<aprobados<<endl;
 	cout<<"Cantidad de estudiantes desaprobados: "<<desaprobados<<endl;
 	cout<<"Lista de estudiantes que fueron registrados: "<<RegistroNombre<<endl;
+        cout<<"gracias por usar nuestro sistema";
 	
 	
 	return 0;
