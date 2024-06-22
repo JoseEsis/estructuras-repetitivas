@@ -9,7 +9,7 @@ int main()
 	int n, suma, cont, desaprobados, aprobados;
 	string nombre, nombreEstudiante, RegistroNombre;
 	float promedio;
-	RegistroNombre= " ";
+	RegistroNombre= ""; //Se quita el espacio incial de la variable RegistroNombre
 	suma=0;
 	cont=0;
 	desaprobados=0;
@@ -22,7 +22,6 @@ int main()
 	{
 		cout<<"\nRegistre nombre del estudiante: ";
 		cin>>nombreEstudiante;
-		RegistroNombre+=nombreEstudiante+"\n";
 		cout<<"Registre la nota del estudiante (solo ingresar numeros): ";
 		cin>>n;
 		suma+=n;		
@@ -30,10 +29,11 @@ int main()
 		if(n>10.5)
 		{
 			aprobados++;
-		}
-		else 
+			RegistroNombre+=to_string(cont)+". "+nombreEstudiante+" Aprobo"+"\n"; //los estudiantes son enumerados y mostrados como aprobados
+		}else 
 		{
 			desaprobados++;
+			RegistroNombre+=to_string(cont)+". "+nombreEstudiante+" Desaprobo"+"\n"; //Los estudiantes son enumerados y mostrados como desaprovados
 		}
 
 		cout<<"Desea continuar (si/no): ";
@@ -42,13 +42,13 @@ int main()
 	while(opciones=="si");
 
 	cout<<"\nDatos obtenidos"<<endl;
-	cout<<"\nNombre de la persona que esta registrando las notas: "<<nombre<<endl;
+	cout<<"\nNombre del registrador de notas: "<<nombre<<endl; //Se denomina al usuario como registrador de notas
 	promedio=suma/cont;
 	cout<<"El promedio de las notas es: "<<promedio<<endl;
 	cout<<"Cantidad de estudiantes registrados:"<<cont<<endl;
 	cout<<"Cantidad de estudiantes aprobados: "<<aprobados<<endl;
 	cout<<"Cantidad de estudiantes desaprobados: "<<desaprobados<<endl;
-	cout<<"Lista de estudiantes que fueron registrados: "<<RegistroNombre<<endl;
+	cout<<"Lista de estudiantes registrados: "<<endl<<RegistroNombre; //Se cambia el enunciado de "Lista de estudiantes que fueron registrados" a "Lista de estudiantes registrados" y termina con un cambio de linea
 	
 	
 	return 0;
